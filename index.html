@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Bmi Calculator</title>
+  </head>
+  <body>
+    <div>
+        <div class="hero min-h-screen" style="background-image: url(image/yoga.jpg);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content  text-neutral-content">
+              <div class="max-w-md">
+                <div class="container shadow-2xl">
+                    <h2 class="text-ce text-3xl font-bold mb-3">BMI Calculator</h2>
+                    <p class="font-bold mb-2">Height in (Feet)</p>
+                    <input id="height" type="number" placeholder="Height" class="input input-bordered input-primary w-full max-w-xs mb-2 text-black border-none outline-none" />
+                    <p class="font-bold mb-2">Weight in (Kg)</p>
+                    <input id="weight" type="number" placeholder="Weight" class="input input-bordered input-primary w-full max-w-xs text-black mb-2" />
+                    <h2 id="bmi" class="mb-1 text-2xl text-center font-bold "></h2>
+                    <p id="category" class="text-center font-bold text-2xl"></p>
+                    <button onclick="bmiCalculator()" class="btn btn-wide mb-2 font-bold bg-transparent text-white">Calculate</button>
+                    <div>
+                        <button onclick="reload()" id="reload" class="btn btn-wide mb-2 font-bold bg-transparent text-white">Refresh</button>
+                    </div>
+                    <div class="flex justify-between">
+                        <h1 class="text-green-200">Name: Tasnim Ahmed</h1>
+                        <h1 class="text-green-200">Roll: 577921</h1>
+                    </div>
+                    
+                </div>
+             
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
